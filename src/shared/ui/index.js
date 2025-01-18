@@ -1,3 +1,3 @@
-export * from './Link'
-export * from './Button'
-export * from './Icons'
+export * from './nav-link'
+export * from './button'
+export * from './icons'
