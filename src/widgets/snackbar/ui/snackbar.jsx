@@ -1,6 +1,5 @@
 import * as styles from './snackbar.styles.js'
-import {SIZE, VARIANT} from "@/shared/ui/button/ui/constants.js";
-import {Button} from "@/shared/ui/index.js";
+import {Button, ButtonStyles} from "@/shared/ui/index.js";
 import {useState} from "react";
 
 export const Snackbar = ({buttonText, children}) => {
@@ -10,7 +9,7 @@ export const Snackbar = ({buttonText, children}) => {
       <styles.Text>
         {children}
       </styles.Text>
-      <Button variant={VARIANT.White} size={SIZE.Medium} onClick={() => setActive(false)}>{buttonText}</Button>
+      <Button $$variant={ButtonStyles.Variant.white} $$size={ButtonStyles.Size.medium} onClick={() => setActive(false)}>{buttonText}</Button>
     </styles.Wrapper>
   )
 }

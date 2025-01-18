@@ -1,7 +1,6 @@
 import * as styles from './header.styles.js';
-import {NAVIGATION} from "@/routes/root/ui/header/ui/constants.js";
-import { VARIANT } from "@/shared/ui/button/ui/constants.js";
-import {Button, NavLink, Logo} from "@/shared/ui/index.js";
+import {NAVIGATION} from "@/widgets/header/ui/constants.js";
+import {Button, ButtonStyles, NavLink, Logo} from "@/shared/ui/index.js";
 import {Burger} from "@/widgets/index.js";
 
 export const Header = () => {
@@ -15,7 +14,7 @@ export const Header = () => {
           }
         </styles.Menu>
         <styles.Authorization>
-          <Button $$variant={VARIANT.Black}>
+          <Button $$variant={ButtonStyles.Variant.black} $$size={ButtonStyles.Size.small}>
             Login
           </Button>
         </styles.Authorization>

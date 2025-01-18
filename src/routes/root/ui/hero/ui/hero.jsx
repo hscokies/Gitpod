@@ -1,6 +1,5 @@
 import * as styles from './hero.styles.js'
-import {Bitbucket, Button, GithubLight, GitlabOrange} from "@/shared/ui/index.js";
-import {SIZE, VARIANT} from "@/shared/ui/button/ui/constants.js";
+import {Bitbucket, Button, GithubLight, GitlabOrange, ButtonStyles} from "@/shared/ui/index.js";
 import Illustration from './static/illustration-large.webp'
 
 export const Hero = () => {
@@ -11,7 +10,7 @@ export const Hero = () => {
         <styles.Tagline>Spin up fresh, automated dev environments for each task, in the cloud, in seconds.
         </styles.Tagline>
         <styles.Action>
-          <Button variant={VARIANT.Yellow} size={SIZE.Large}>Try Now</Button>
+          <Button $$variant={ButtonStyles.Variant.yellow} $$size={ButtonStyles.Size.large}>Try Now</Button>
           <styles.Tip>
             Open a workspace.
             Start from any Git context.
