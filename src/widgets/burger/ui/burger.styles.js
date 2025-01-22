@@ -12,6 +12,7 @@ export const Menu = styled.menu`
   background: #F8F4F4;
   width: 100vw;
   height: 100vh;
+  margin: 0;
   padding-inline: 0;
   padding-top: 90px;
 

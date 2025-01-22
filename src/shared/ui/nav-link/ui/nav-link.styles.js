@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Text = styled.a`
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
-  color: #12100C46;
+  color: #585653;
   line-height: 24px;
   font-size: 16px;
   text-align: left;
@@ -13,7 +13,7 @@ export const Text = styled.a`
   position: relative;
 
   &:hover {
-    color: #12100CA0;
+    color: #12100c;
   }
 
   &::after {
@@ -22,7 +22,6 @@ export const Text = styled.a`
     color: #FF8A00;
     font-size: 12px;
     position: absolute;
-    right: -8px;
     top: -8px;
   }
 `;
