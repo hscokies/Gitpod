@@ -1,3 +1,5 @@
 export * from './nav-link'
 export * from './button'
 export * from './icons'
+export * from './typography'
+export * from './icon-button'
