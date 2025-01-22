@@ -1,5 +1,5 @@
 import * as styles from './header.styles.js';
-import {NAVIGATION} from "@/widgets/header/ui/constants.js";
+import {NAVIGATION} from "@/widgets/header/ui/navigation.js";
 import {Button, ButtonStyles, NavLink, Logo} from "@/shared/ui/index.js";
 import {Burger} from "@/widgets/index.js";
 
@@ -7,7 +7,7 @@ export const Header = () => {
 
   return (
     <styles.Wrapper>
-      <Logo IncludeText/>
+      <Logo/>
         <styles.Menu>
           {
             NAVIGATION.map((item, index) => (<NavLink key={index} $$highlighted={item.highlighted}>{item.label}</NavLink>))

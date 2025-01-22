@@ -1,9 +1,10 @@
-export const Firefox = () => (
+export const Firefox = ({...props}) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width={24}
         height={24}
-        fill="none">
+        fill="none"
+        {...props}>
         <g clipPath="url(#a)">
             <path
                 fill="url(#b)"

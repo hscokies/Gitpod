@@ -1,9 +1,10 @@
-export const GithubLight = () => (
+export const GithubLight = ({...props}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={29}
     height={29}
     fill="none"
+    {...props}
   >
     <g clipPath="url(#a)">
       <path
