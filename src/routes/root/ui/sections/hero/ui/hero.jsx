@@ -1,5 +1,5 @@
 import * as styles from './hero.styles.js'
-import {Bitbucket, Button, GithubLight, GitlabOrange, ButtonStyles} from "@/shared/ui/index.js";
+import {Bitbucket, Button, GithubLight, Gitlab, ButtonStyles} from "@/shared/ui/index.js";
 import Illustration from './static/illustration-large.webp'
 
 export const Hero = () => {
@@ -17,9 +17,15 @@ export const Hero = () => {
           </styles.Tip>
         </styles.Action>
         <styles.Platforms>
-          <GitlabOrange/>
-          <GithubLight/>
-          <Bitbucket/>
+          <styles.LinkWrapper>
+            <Gitlab/>
+          </styles.LinkWrapper>
+          <styles.LinkWrapper>
+            <GithubLight/>
+          </styles.LinkWrapper>
+          <styles.LinkWrapper>
+            <Bitbucket/>
+          </styles.LinkWrapper>
         </styles.Platforms>
       </styles.Container>
       <styles.Banner src={Illustration} alt={'Illustration'}/>

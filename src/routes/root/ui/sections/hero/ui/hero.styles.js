@@ -59,7 +59,7 @@ export const Tagline = styled.p`
   font-size: 23px;
   line-height: 32px;
 
-  color: #12100C46;
+  color: #575452;
 `
 
 export const Action = styled.div`
@@ -78,7 +78,7 @@ export const Tip = styled.span`
   max-width: 187px;
   font-size: 16px;
   line-height: 24px;
-  color: #12100C46;
+  color: #575452;
 `
 
 export const Platforms = styled.div`
@@ -91,6 +91,10 @@ export const Platforms = styled.div`
   @media (max-width: 449px) {
     justify-content: space-evenly;
   }
+`
+
+export const LinkWrapper = styled.a`
+  cursor: pointer;
 `
 
 export const Banner = styled.img`
