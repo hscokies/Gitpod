@@ -7,7 +7,7 @@ export const Burger = ({items}) => {
 
   return (
     <>
-      <styles.Button onClick={() => setActive(!active)} $$active={active}/>
+      <styles.Button aria-label="burger-menu" onClick={() => setActive(!active)} $$active={active}/>
       <BurgerMenu items={items} active={active}/>
     </>
   )

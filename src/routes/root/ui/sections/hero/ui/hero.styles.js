@@ -98,6 +98,10 @@ export const LinkWrapper = styled.a`
 `
 
 export const Banner = styled.img`
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  max-height: 672px;
   padding: 20px;
   @media (max-width: 1344px) and (min-width: 946px) {
     max-width: 50%;

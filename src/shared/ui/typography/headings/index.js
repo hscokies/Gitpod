@@ -14,7 +14,7 @@ export const H2 = styled.h2`
   }
 `
 
-export const H3 = styled.h3`
+export const H2Small = styled.h2`
   font-family: "Roboto Black",sans-serif;
   font-size: 32px;
   line-height: 40px;

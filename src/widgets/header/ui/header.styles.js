@@ -9,7 +9,7 @@ export const Wrapper = styled.header`
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   box-sizing: border-box;
   padding: 20px 32px;
 
@@ -42,4 +42,8 @@ export const Authorization = styled.div`
   @media (max-width: 947px) {
     display: none;
   }
+`
+
+export const LinkWrapper = styled.a`
+  cursor: pointer;
 `

@@ -1,12 +1,12 @@
 import * as styles from './prebuilds-feature.styles.js'
-import {Button, ButtonStyles, H3, Paragraph} from "@/shared/ui/index.js";
+import {Button, ButtonStyles, H2Small, Paragraph} from "@/shared/ui/index.js";
 import {Terminal, TerminalAction, TerminalLine} from "@/widgets/index.js";
 
 export const PrebuildsFeature = () => (
   <styles.Wrapper>
     <styles.DescriptionContainer>
       <styles.TextContainer>
-        <H3>Think CI/CD for dev environments</H3>
+        <H2Small>Think CI/CD for dev environments</H2Small>
         <Paragraph style={{maxWidth: '650px'}}>
           We invented prebuilds so application code, configuration and
           infrastructure can all be stored as machine-executable code

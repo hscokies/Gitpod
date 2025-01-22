@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   box-shadow: 0 2px 5px #00000014, 0 5px 20px #0000001F;
   border-radius: 20px;
   padding: 10px 0 45px 50px;
-  min-width: 600px;
+  min-width: 556px;
   max-width: 692px;
 
   @media (max-width: 670px) {
@@ -81,3 +81,5 @@ export const Prompt = styled.input`
   font-size: 24px;
   color: #575452;
 `
+
+export const LabelPlaceholder = styled.label``
