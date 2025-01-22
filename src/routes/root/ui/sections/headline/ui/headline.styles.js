@@ -24,11 +24,6 @@ const BaseText = styled.p`
     font-size: 32px;
     line-height: 42px;
   }
-
-  @media (max-width: 640px) {
-    font-size: 24px;
-    line-height: 34px;
-  }
 `
 
 export const HighlightText = styled(BaseText)`
