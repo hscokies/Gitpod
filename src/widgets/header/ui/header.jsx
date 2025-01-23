@@ -7,12 +7,12 @@ export const Header = () => {
 
   return (
     <styles.Wrapper>
-      <styles.LinkWrapper>
+      <styles.LinkWrapper href='/'>
         <Logo/>
       </styles.LinkWrapper>
         <styles.Menu>
           {
-            NAVIGATION.map((item, index) => (<NavLink key={index} $$highlighted={item.highlighted}>{item.label}</NavLink>))
+            NAVIGATION.map((item, index) => (<NavLink key={index} href='/' $$highlighted={item.highlighted}>{item.label}</NavLink>))
           }
         </styles.Menu>
         <styles.Authorization>

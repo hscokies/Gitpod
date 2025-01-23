@@ -12,7 +12,7 @@ export const Footer = () => (
             <styles.NavSection key={item.title}>
               <styles.NavTitle>{item.title}</styles.NavTitle>
               {
-                item.links.map(link => <NavLink key={link.text} $$highlighted={link.highlighted}>{link.text}</NavLink>)
+                item.links.map(link => <NavLink key={link.text} href='/' $$highlighted={link.highlighted}>{link.text}</NavLink>)
               }
             </styles.NavSection>
           ))
@@ -22,7 +22,7 @@ export const Footer = () => (
       <styles.BottomContainer>
         <styles.Copyright>
           <LogoIcon width="24" height="24"/>
-          <styles.CopyrightText>
+          <styles.CopyrightText href='/'>
             Copyright&nbsp;&copy; 2021 Gitpod
           </styles.CopyrightText>
         </styles.Copyright>

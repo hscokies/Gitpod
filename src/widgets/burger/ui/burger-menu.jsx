@@ -7,7 +7,7 @@ export const BurgerMenu = ({active, items}) => {
 
   return createPortal(
       <styles.Menu>
-        {items.map((item, index) => <NavLink key={index}>{item.label}</NavLink>)}
+        {items.map((item, index) => <NavLink key={index} href='/'>{item.label}</NavLink>)}
         <Button size={ButtonStyles.Size.large} variant={ButtonStyles.Variant.black}>Login</Button>
       </styles.Menu>, document.body
   )
