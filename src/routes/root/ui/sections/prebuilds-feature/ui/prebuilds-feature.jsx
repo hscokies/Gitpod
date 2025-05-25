@@ -1,9 +1,32 @@
 import * as styles from './prebuilds-feature.styles.js'
 import {Button, ButtonStyles, H2Small, Paragraph} from "@/shared/ui/index.js";
 import {Terminal, TerminalAction, TerminalLine} from "@/widgets/index.js";
+import { useEffect, useState } from 'react';
+import Lines from '@/routes/root/ui/sections/prebuilds-feature/ui/lib/data.json';
+import { useInView } from 'react-intersection-observer';
 
-export const PrebuildsFeature = () => (
-  <styles.Wrapper>
+export const PrebuildsFeature = () => {
+  const [lines, setLines] = useState([])
+
+  const {ref, inView} = useInView({
+    triggerOnce: true,
+    threshold: .5,
+
+  })
+
+  useEffect(() => {
+    if (!inView) {
+      return;
+    }
+
+    Lines.forEach((line) => {
+      setTimeout(() => {
+        setLines(prev => [...prev, line]);
+      }, line.delay);
+    })
+  }, [inView]);
+
+  return <styles.Wrapper ref={ref}>
     <styles.DescriptionContainer>
       <styles.TextContainer>
         <H2Small>Think CI/CD for dev environments</H2Small>
@@ -20,18 +43,14 @@ export const PrebuildsFeature = () => (
       </styles.ButtonsContainer>
     </styles.DescriptionContainer>
     <Terminal>
-      <TerminalAction action={'Compiling'}>surf v1.0.3</TerminalAction>
-      <TerminalAction action={'Compiling'}>http-client v6.3.5</TerminalAction>
-      <TerminalAction action={'Compiling'}>surf v2.2.0</TerminalAction>
-      <TerminalAction action={'Compiling'}>git v0.13.17</TerminalAction>
-      <TerminalAction action={'Compiling'}>shadow-rs v0.5.24</TerminalAction>
-      <TerminalAction action={'Compiling'}>nu v0.28.0</TerminalAction>
-      <TerminalAction action={'Installing'}>/workspace/.cargo/bin/nu</TerminalAction>
-      <TerminalAction action={'Finished'}>dev target(s) in 12m 30s</TerminalAction>
-      <TerminalLine/>
-      <TerminalLine>exit</TerminalLine>
-      <TerminalLine>🤙 This task ran as workspace prebuild</TerminalLine>
-      <TerminalLine>🎉 Well done on saving 12 minutes</TerminalLine>
+      {lines.map((data, index) => {
+        if (data.type === 'action'){
+          return <TerminalAction key={index} action={data.action}>{data.text}</TerminalAction>
+        }
+        else if (data.type === 'line'){
+          return <TerminalLine key={index}>{data.text}</TerminalLine>
+        }
+      })}
     </Terminal>
   </styles.Wrapper>
-)
+}

@@ -50,6 +50,10 @@ export const Container = styled.div`
   &>p{
     min-height: 32px;
   }
+
+  & > :first-child{
+    margin-top: auto;
+  }
 `
 
 export const Action = styled.div`

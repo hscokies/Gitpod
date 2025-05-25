@@ -1,0 +1,82 @@
+﻿[
+  {
+    "id": 0,
+    "type": "action",
+    "action": "Compiling",
+    "text": "surf v1.0.3",
+    "delay": 1000
+  },
+  {
+    "id": 1,
+    "type": "action",
+    "action": "Compiling",
+    "text": "http-client v6.3.5",
+    "delay": 2500
+  },
+  {
+    "id": 2,
+    "type": "action",
+    "action": "Compiling",
+    "text": "surf v2.2.0",
+    "delay": 3000
+  },
+  {
+    "id": 3,
+    "type": "action",
+    "action": "Compiling",
+    "text": "git v0.13.17",
+    "delay": 3500
+  },
+  {
+    "id": 4,
+    "type": "action",
+    "action": "Compiling",
+    "text": "shadow-rs v0.5.24",
+    "delay": 5000
+  },
+  {
+    "id": 5,
+    "type": "action",
+    "action": "Compiling",
+    "text": "nu v0.28.0",
+    "delay": 7000
+  },
+  {
+    "id": 6,
+    "type": "action",
+    "action": "Installing",
+    "text": "/workspace/.cargo/bin/nu",
+    "delay": 8000
+  },
+  {
+    "id": 7,
+    "type": "action",
+    "action": "Finished",
+    "text": "dev target(s) in 12m 30s",
+    "delay": 10000
+  },
+  {
+    "id": 8,
+    "type": "line",
+    "text": "",
+    "delay": 10000
+  },
+  {
+    "id": 9,
+    "type": "line",
+    "text": "exit",
+    "delay": 10000
+  },
+  {
+    "id": 10,
+    "type": "line",
+    "text": "\uD83E\uDD19 This task ran as workspace prebuild",
+    "delay": 10500
+  },
+  {
+    "id": 11,
+    "type": "line",
+    "text": "\uD83C\uDF89 Well done on saving 12 minutes",
+    "delay": 10500
+  }
+]
