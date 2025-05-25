@@ -18,6 +18,8 @@ export const Banner = styled.img`
   width: 100%;
   max-width: calc(692px*2);
   margin: 47px 0 49px 0;
+  transition: box-shadow 0.25s ease-in-out;
+  box-shadow: ${props => `${props.$$offsetX}px ${props.$$offsetY}px 15px 8px #FF8A0066`};
 `
 
 export const ButtonsContainer = styled.div`
