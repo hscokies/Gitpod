@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 export const Wrapper = styled.section`
   display: flex;
@@ -97,12 +97,27 @@ export const LinkWrapper = styled.a`
   cursor: pointer;
 `
 
+export const RotateAnimation = keyframes`
+  from{
+    transform: rotate(-10deg);
+  }
+  to{
+    transform: rotate(10deg);
+  }
+`;
+
 export const Banner = styled.img`
   display: block;
   width: 100%;
   max-width: 700px;
   max-height: 672px;
   padding: 20px;
+
+  animation-name: ${RotateAnimation};
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
   @media (max-width: 1344px) and (min-width: 946px) {
     max-width: 50%;
   }
